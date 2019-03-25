@@ -1,6 +1,6 @@
 # Git&GitHub Guide
 
-Prerequisites:
+## 0. Prerequisites:
 
 * Watched the lecture WaterHackWeek CyberSeminar: 
 [Version Control with Git and Github Video](https://www.youtube.com/watch?v=Bc5BO9gPC9w&feature=youtu.be)
@@ -16,7 +16,7 @@ Prerequisites:
 * Have joined the Waterhackweek Github Organization.
 
 
-## Creating a project repository
+## 1. Creating a project repository
 
 One person on your team should volunteer and create a repository for the project under the Waterhackweek organization.
 
@@ -24,14 +24,14 @@ https://github.com/waterhackweek
 
 ![](img/newRepo.png)
 
-Click New and follow the steps: check yes to create Readme.md
+Click New and follow the steps: check yes to create README.md
 
 * Format project name as whw2019_ourproject (you can change the name later)
 * Invite others to the repo:
 	* Settings -> Collaborators
 	* Note to collaborators: you will receive an invitation to your email associated with github.com. If you cannnot find it look for the `bell` notifications on the top right of the website.
 
-## Cloning the repository.
+## 2. Cloning the repository
 
 Each participant should clone the repository so they have their local copy. Navigate through the terminal to the folder where you want to keep Waterhackweek work. (`cd path_to_waterhackweek`)
 
@@ -41,15 +41,15 @@ git clone www.github.com/waterhackweek/whw2019_ourproject/
 
 This will create a new folder called whw2019_ourproject. Navigate to the folder.
 
-## Updating the Readme with your name.
+## 3. Updating the README with your name
 
-Open the Readme.md file with your favorite editor and add your name to the file (on a separate line).
+Open the README.md file with your favorite editor and add your name to the file (on a separate line).
 
 Then add this change, commit it to the local repository, and publish it on the github.com website.
 
 ```
-git add Readme.md
-git commit -m "Adding Valentina's name to Readme.md"
+git add README.md
+git commit -m "Adding Valentina's name to README.md"
 git push origin
 ```
 
@@ -58,8 +58,7 @@ Make sure your change appears online.
 ! Remember to run 
 
 ``` 
-   git status
-
+git status
 ```
 to observe the changes made into the your repository.
 
@@ -72,10 +71,10 @@ git diff
 
 ```
 
-## Updating your local repository with the changes of your collaborators. 
+## 4. Updating your local repository with the changes of your collaborators
 
 ```
-  git pull origin master
+git pull origin master
 
 ```
 
@@ -85,11 +84,14 @@ git diff
 To see the what is hidden in origin:
 
 ```
-   git remote -v 
+git remote -v 
 
 ```
 
 To practice these steps more, make more changes to the title and the description of the project.
+
+
+![](img/centralized_workflow.png)
 
 *Ran into a problem?*
 
@@ -100,7 +102,7 @@ When working with several people sometimes you
 * when pulling you arrive into a merge conflict: need to resolve the conflict manually
 
 
-## Resolving the merge conflict
+## 5. Resolving the merge conflict
 
 ```
 git status
@@ -109,12 +111,23 @@ git status
 
 You will see the file/s which caused the merge conflict in green.
 
-Open it and decide which changes you want to keep. Modify the file so it looks as you wish. Remove the arrows. Commit and publish the changes.
+Open it and detect the conflict by the special format:
 
 ```
-git add Readme.md
+<<<<<<< HEAD
+my text
+=======
+somebody else's text
+>>>>>>> 35ab35436
+```
+
+
+Decide which changes you want to keep, and modify the file so it looks as you wish. Remove the unnecessary characters. Commit and publish the changes.
+
+```
+git add README.md
 git commit -m "resolving merge conflict"
-git push origin
+git push origin master
 ```
 
 You can continue working on as usual.
@@ -124,7 +137,7 @@ You can continue working on as usual.
 
 
 
-## Avoiding problems: forking workflow.
+## 6. Avoiding problems: forking workflow
 
 Some merge conflicts can be avoided by working with Forks.
 
@@ -143,7 +156,7 @@ git remote add origin www.github.com/valentina-s/whw_2019_ourproject
 * Add a new remote to talk to the main repo:
 
 ```
-git remote add upstream www.github.com/waterhackweek/ourproject 
+git remote add upstream https://www.github.com/waterhackweek/ourproject 
 ```
 
 From now on you push to origin, but you pull from upstream.
@@ -152,12 +165,12 @@ From now on you push to origin, but you pull from upstream.
 ! Make sure your origin contains your github username, and upstream contains the waterhackweek name.
 
 
-## Submitting changes via a pull request
+## 7. Submitting changes via a pull request
 
 Make some changes to a file and commit and publish them.
 
 ```
-git add Readme.md
+git add README.md
 git commit -m "more changes"
 git push origin master
 ```
@@ -176,7 +189,7 @@ Submit a pull request by clicking `New pull request`:
 
 ! Note: while your pull request is pending, any change you push to the fork will become a part of the request. This is useful if you are asked to make small changes before your PR is accepted.
 
-From now on we encourage individual members to use forks, and submit changes to the main repo with pull requests.
+From now on we encourage individual members to use forks, and submit changes to the main repo through pull requests.
 
 ![](img/BasicForkWorkflow.png)
 
@@ -194,7 +207,7 @@ From now on we encourage individual members to use forks, and submit changes to 
 * you can use jupyterlab (supports both notebooks and scripts)
 
 	```
-	   jupyter lab
+	jupyter lab
 	```
 
 * nbdime: tool to diff notebooks [https://nbdime.readthedocs.io/en/latest/](https://nbdime.readthedocs.io/en/latest/)
@@ -203,13 +216,27 @@ From now on we encourage individual members to use forks, and submit changes to 
 ## Git and JupyterHub
 
 
-You can access the terminal on Jupyter Hub. From there you can use git and commit your work.
+You can access the terminal on JupyterHub. From there you can use git and commit your work.
 
 
 ## Troubleshooting
 
 * Deleting files
-* Resetting to an older version
+
+	```
+	git rm filename.txt	
+	rm filename.txt
+	```
+	
+	!  `git rm` just removes the file from git, to delete the file completely  use the bash `rm` command after that
+
+* Reverting to the previous commit
+	
+	```
+	git revert HEAD
+	```
+	
+	! Note your files in the local repo will be still there. 
 
 
 
@@ -226,7 +253,7 @@ Software Packages Projects:
 
 ## Adding a license
 
-Discuss with your teammates what license you will use for your code: [https://choosealicense.com/](https://choosealicense.com/)
+Discuss with your teammates what license you will use for your code: [https://choosealicense.com/](https://choosealicense.com/).
 
 
 ## References:
