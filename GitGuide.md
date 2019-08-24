@@ -2,9 +2,6 @@
 
 ## 0. Prerequisites:
 
-* Watched the lecture WaterHackWeek CyberSeminar: 
-[Version Control with Git and Github Video](https://www.youtube.com/watch?v=Bc5BO9gPC9w&feature=youtu.be)
-[https://www.cuahsi.org/education/cyberseminars/waterhackweek-cyberseminar-series/](https://www.cuahsi.org/education/cyberseminars/waterhackweek-cyberseminar-series/)
 
 * Set up git on your laptop and have your `github.com` account. 
 
@@ -13,39 +10,44 @@
 	Test set-up by typing `git` in the terminal (Git-Bash on Windows)
 	
 
-* Have joined the Waterhackweek Github Organization.
+* Have joined the Oceanhackweek Github Organization.
 
 
 ## 1. Creating a project repository
 
-One person on your team should volunteer and create a repository for the project under the Waterhackweek organization.
+One person in your group (preferably one who has never done it before) should volunteer and create a repository for the project under the Oceanhackweek organization. 
 
-https://github.com/waterhackweek
+https://github.com/oceanhackweek
 
 ![](img/newRepo.png)
 
 Click New and follow the steps: check yes to create README.md
 
-* Format project name as whw2019_ourproject (you can change the name later)
+* Format project name as ohw19-project-ProjectName (you can change the name later)
 * Invite others to the repo:
 	* Settings -> Collaborators
 	* Note to collaborators: you will receive an invitation to your email associated with github.com. If you cannnot find it look for the `bell` notifications on the top right of the website.
 
 ## 2. Cloning the repository
 
-Each participant should clone the repository so they have their local copy. Navigate through the terminal to the folder where you want to keep Waterhackweek work. (`cd path_to_waterhackweek`)
+Each participant should clone the repository so they have their local copy. Navigate through the terminal to the folder where you want to keep Oceanhackweek work. (`cd path_to_oceanhackweek`)
 
 ```
-git clone www.github.com/waterhackweek/whw2019_ourproject/ 
+git clone www.github.com/oceanhackweek/ohw19-project-ProjectName 
 ```
 
-This will create a new folder called whw2019_ourproject. Navigate to the folder.
+This will create a new folder called `ohw19-project-ProjectName`. Navigate to the folder.
 
 ## 3. Updating the README with your name
 
-Open the README.md file with your favorite editor and add your name to the file (on a separate line).
 
-Then add this change, commit it to the local repository, and publish it on the github.com website.
+Open the README.md file with your favorite editor create a section
+
+#### Project Discussion
+
+Under this section add your name 
+
+Then add this change, commit it to the local repository, and push it so that it appears on the github.com website.
 
 ```
 git add README.md
@@ -122,7 +124,7 @@ somebody else's text
 ```
 
 
-Decide which changes you want to keep, and modify the file so it looks as you wish. Remove the unnecessary characters. Commit and publish the changes.
+Decide which changes you want to keep, and modify the file so it looks as you wish directly from the editor. Remove the unnecessary characters. Add, commit and push the changes.
 
 ```
 git add README.md
@@ -137,7 +139,7 @@ You can continue working on as usual.
 
 
 
-## 6. Avoiding problems: forking workflow
+## 6. Avoiding problems: forking workflow (extra if you have time and want to practice more)
 
 Some merge conflicts can be avoided by working with Forks.
 
@@ -150,19 +152,19 @@ Forks are public copies of the main repo, from which
 
 ```
 git remote rm origin
-git remote add origin www.github.com/valentina-s/whw_2019_ourproject
+git remote add origin www.github.com/valentina-s/ohw19-project-ProjectName
 ```
 
 * Add a new remote to talk to the main repo:
 
 ```
-git remote add upstream https://www.github.com/waterhackweek/ourproject 
+git remote add upstream https://www.github.com/oceanhackweek/ohw19-project-ProjectName 
 ```
 
-From now on you push to origin, but you pull from upstream.
+From now on you will push to origin, but you pull from upstream.
 
 
-! Make sure your origin contains your github username, and upstream contains the waterhackweek name.
+! Make sure your origin contains your github username, and upstream contains the oceanhackweek name.
 
 
 ## 7. Submitting changes via a pull request
@@ -189,7 +191,7 @@ Submit a pull request by clicking `New pull request`:
 
 ! Note: while your pull request is pending, any change you push to the fork will become a part of the request. This is useful if you are asked to make small changes before your PR is accepted.
 
-From now on we encourage individual members to use forks, and submit changes to the main repo through pull requests.
+In general we encourage github users to submit changes to the main repo through pull requests, but direct push is still a viable workflow for small projects when participants work on the same documents.
 
 ![](img/BasicForkWorkflow.png)
 
@@ -204,8 +206,7 @@ From now on we encourage individual members to use forks, and submit changes to 
 * before committing clear output notebook output
 (images are stored in very long strings of crazy characters)
 
-* you can use jupyterlab (supports both notebooks and scripts)
-
+* if you use the jupyter lab mode you can work with `.py` files instead of notebooks
 	```
 	jupyter lab
 	```
@@ -213,10 +214,12 @@ From now on we encourage individual members to use forks, and submit changes to 
 * nbdime: tool to diff notebooks [https://nbdime.readthedocs.io/en/latest/](https://nbdime.readthedocs.io/en/latest/)
 
 
-## Git and JupyterHub
+## Git and Pangeo
 
 
-You can access the terminal on JupyterHub. From there you can use git and commit your work.
+You can access the terminal on Pangeo. From there you can use git and commit your work.
+
+![](img/TerminalPangeo.png)
 
 
 ## Troubleshooting
