@@ -241,6 +241,7 @@ You can access the terminal on Pangeo. From there you can use git and commit you
 
 
 ## Structuring the repo
+
 Improve the `README.md` by filling individual sections from the project guidelines:
 
 [https://oceanhackweek.github.io/wiki/project_guidelines.html](https://oceanhackweek.github.io/wiki/project_guidelines.html)
@@ -261,6 +262,7 @@ Improve the `README.md` by filling individual sections from the project guidelin
 
 #### Background reading
 
+### Project Organization
 
 Data Science Projects:
 
@@ -270,7 +272,7 @@ Software Packages Projects:
 
 [https://github.com/uwescience/shablona](https://github.com/uwescience/shablona)
 
-## Adding a license
+### Adding a license
 
 Discuss with your teammates what license you will use for your code: [https://choosealicense.com/](https://choosealicense.com/).
 
