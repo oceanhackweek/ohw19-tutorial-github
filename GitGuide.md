@@ -1,4 +1,4 @@
-# Git&GitHub Guide
+# Git & GitHub Guide
 
 ## 0. Prerequisites:
 
@@ -40,10 +40,7 @@ This will create a new folder called `ohw19-project-ProjectName`. Navigate to th
 
 ## 3. Updating the README with your name
 
-
 Open the README.md file with your favorite editor create a section
-
-#### Project Discussion
 
 Under this section add your name 
 
@@ -167,7 +164,7 @@ From now on you will push to origin, but you pull from upstream.
 ! Make sure your origin contains your github username, and upstream contains the oceanhackweek name.
 
 
-## 7. Submitting changes via a pull request
+### Submitting changes via a pull request
 
 Make some changes to a file and commit and publish them.
 
@@ -244,6 +241,25 @@ You can access the terminal on Pangeo. From there you can use git and commit you
 
 
 ## Structuring the repo
+Improve the `README.md` by filling individual sections from the project guidelines:
+
+[https://oceanhackweek.github.io/wiki/project_guidelines.html](https://oceanhackweek.github.io/wiki/project_guidelines.html)
+
+#### Project title
+
+#### Discussion Participants
+
+#### The problem
+
+#### Application example
+
+#### Specific tasks
+
+#### Existing methods
+
+#### Proposed methods/tools
+
+#### Background reading
 
 
 Data Science Projects:
