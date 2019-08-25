@@ -136,7 +136,7 @@ You can continue working on as usual.
 
 
 
-## 6. Avoiding problems: forking workflow (extra if you have time and want to practice more)
+## 6. Avoiding problems: forking workflow (optional)
 
 Some merge conflicts can be avoided by working with Forks.
 
