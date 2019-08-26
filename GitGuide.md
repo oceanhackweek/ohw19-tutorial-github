@@ -140,13 +140,13 @@ You can continue working on as usual.
 
 So far you collaborated using what is called a centralized git workflow: i.e. every collaborator makes directly changes to the repo.
 
-![](img/centralized_workflow_atlassian)
+![](img/centralized_workflow_atlassian.png)
 
 Some merge conflicts can be avoided by working with Forks instead of directly pushing to the repo.
 
 Forks are public copies of the main repo, from which you can submit changes to the main repo.
 
-![](img/forked_workflow_atlassian)
+![](img/forked_workflow.png)
 
 * Sync your local repo with the public one
 * Fork the public repo
