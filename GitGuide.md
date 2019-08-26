@@ -140,7 +140,7 @@ You can continue working on as usual.
 
 So far you collaborated using what is called a centralized git workflow: i.e. every collaborator makes directly changes to the repo.
 
-![](img/centralized_workflow_atlassian.png)
+![](img/centralized_workflow_atlasian.png)
 
 Some merge conflicts can be avoided by working with Forks instead of directly pushing to the repo.
 
