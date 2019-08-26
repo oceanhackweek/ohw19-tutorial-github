@@ -23,7 +23,7 @@ https://github.com/oceanhackweek
 
 Click New and follow the steps: check yes to create README.md
 
-* Format project name as ohw19-project-ProjectName (you can change the name later)
+* Format project name as `ohw19-project-ProjectName` (you can change the name later)
 * Invite others to the repo:
 	* Settings -> Collaborators
 	* Note to collaborators: you will receive an invitation to your email associated with github.com. If you cannnot find it look for the `bell` notifications on the top right of the website.
@@ -136,7 +136,7 @@ You can continue working on as usual.
 
 
 
-## 6. Avoiding problems: forking workflow (optional)
+## 6. Avoiding problems: forking workflow
 
 Some merge conflicts can be avoided by working with Forks.
 
