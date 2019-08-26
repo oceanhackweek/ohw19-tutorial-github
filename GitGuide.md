@@ -144,8 +144,10 @@ Forks are public copies of the main repo, from which
 
 * Sync your local repo with the public one
 * Fork the public repo
+![](img/fork_button.png)
 	* Note it looks the same but the web address contains your username	
-* Go to your local repo and rename your origin to point to the fork:
+    [www.github.com/valentina-s/ohw19-project-ProjectName](www.github.com/valentina-s/ohw19-project-ProjectName)
+* Go to your local repo and rename your `origin` to point to the fork:
 
 ```
 git remote rm origin
@@ -158,10 +160,10 @@ git remote add origin www.github.com/valentina-s/ohw19-project-ProjectName
 git remote add upstream https://www.github.com/oceanhackweek/ohw19-project-ProjectName 
 ```
 
-From now on you will push to origin, but you pull from upstream.
+From now on you will push to `origin`, but you pull from `upstream`.
 
 
-! Make sure your origin contains your github username, and upstream contains the oceanhackweek name.
+! Make sure your `origin` contains your github username, and upstream contains the oceanhackweek name.
 
 
 ### Submitting changes via a pull request
