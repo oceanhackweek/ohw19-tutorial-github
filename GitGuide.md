@@ -288,7 +288,13 @@ Discuss with your teammates what license you will use for your code: [https://ch
 ## References:
 
 * Software Carpentry Lesson:
-	* 	[http://swcarpentry.github.io/git-novice/](http://swcarpentry.github.io/git-novice/)
+
+	[http://swcarpentry.github.io/git-novice/](http://swcarpentry.github.io/git-novice/)
+
+* Atlassian Tutorials
+
+	[https://www.atlassian.com/git/tutorials/what-is-version-control](https://www.atlassian.com/git/tutorials/what-is-version-control)
+
 
 
 
